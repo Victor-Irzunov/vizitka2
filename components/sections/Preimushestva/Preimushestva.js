@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Preimushestva() {
 	return (
-		<section className='sd:py-20 xz:py-5' id="preimushestva">
+		<section className='sd:py-10 xz:py-5' id="preimushestva">
 			<div className='container mx-auto'>
 				<div className='text-center'>
 					<h3 className='text-2xl sm:text-4xl font-bold mb-4 uppercase text-primary'>

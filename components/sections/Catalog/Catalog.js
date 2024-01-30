@@ -20,7 +20,7 @@ export default function Catalog() {
 
   return (
     <>
-      <section className='py-20 relative ' id="catalog">
+      <section className='py-10 relative ' id="catalog">
         <div className='container mx-auto'>
           <div className='text-center'>
             <h3 className='text-3xl sm:text-4xl font-bold mb-4 text-primary uppercase'>

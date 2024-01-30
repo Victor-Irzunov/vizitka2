@@ -5,7 +5,7 @@ import { Link as LinkScroll } from 'react-scroll';
 
 
 const Nav = ({activeSection2}) => {
-  const sections = ['home', 'about', 'price', 'otzyvy', 'contacts'];
+  const sections = ['home', 'preimushestva', 'catalog', 'contacts'];
 	const [activeSection, setActiveSection] = useState('');
 
   const handleSectionVisibility = (idx) => {
@@ -52,10 +52,5 @@ const Nav = ({activeSection2}) => {
     </nav>
   );
 }
-
-
-
-
-
 
 export default Nav;

@@ -1,20 +1,14 @@
 "use client"
 import Icon from "@/components/iconMesseger/Icon";
 import Nav from "@/components/nav/Nav";
-import Otzyvy from "@/components/sections/Otzyvy/Otzyvy";
-import Portfolio from "@/components/sections/Portfolio/Portfolio";
 import Preimushestva from "@/components/sections/Preimushestva/Preimushestva";
-import Price from "@/components/sections/price/Price";
-import About from "@/components/sections/about/About";
-import { Link as LinkScroll } from 'react-scroll';
-// import { useInView } from 'react-intersection-observer';
 import { useEffect, useState } from "react";
 import Modal from "@/components/modal/Modal";
 import Catalog from "@/components/sections/Catalog/Catalog";
 
 
 export default function Home() {
-  const sections = ['home', 'about', 'price', 'otzyvy', 'contacts'];
+  const sections = ['home', 'preimushestva', 'catalog', 'contacts'];
   const [activeSection, setActiveSection] = useState('')
   const [selectedProduct, setSelectedProduct] = useState(null);
   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
@@ -72,13 +66,9 @@ export default function Home() {
 
   return (
     <main
-      className="bg-[#1F232D]"
-    // style={{ backgroundImage: 'url("/background/fon.webp")' }}
-
-    >
-
+      className="bg-[#1F232D]" id="home">
       <div className='container mx-auto'>
-        <section className="pt-36 pb-20" id="home">
+        <section className="pt-36 pb-20" >
 
           <div className='flex sd:flex-row xz:flex-col'>
 
@@ -90,7 +80,6 @@ export default function Home() {
               <p className='mt-8 text-white/70 font-light text-sm'>
                 Приветствуем вас на нашем сайте! Мы специализируемся на создании уникальных сайтов-визиток. Наша команда профессионалов готова воплотить ваши идеи в креативный и функциональный веб-проект. С нами ваш онлайн имидж будет на высшем уровне!
               </p>
-
 
               <div className='text-white/90 mt-8'>
                 <Icon />
@@ -120,7 +109,9 @@ export default function Home() {
           </div>
         </section>
 
+        <div className='h-8'/>
         <Preimushestva />
+        <div className='h-8'/>
         <Catalog />
       </div>
       <Nav activeSection2={activeSection} />
